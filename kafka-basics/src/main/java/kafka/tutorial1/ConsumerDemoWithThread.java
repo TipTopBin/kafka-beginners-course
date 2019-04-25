@@ -27,7 +27,7 @@ public class ConsumerDemoWithThread {
     private void run() {
         Logger logger = LoggerFactory.getLogger(ConsumerDemoWithThread.class.getName());
 
-        String bootstrapServers = "127.0.0.1:9092";
+        String bootstrapServers = "kafka.cluster.local:31090";
         String groupId = "my-sixth-application";
         String topic = "first_topic";
 

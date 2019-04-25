@@ -18,7 +18,7 @@ public class ConsumerDemoGroups {
 
         Logger logger = LoggerFactory.getLogger(ConsumerDemoGroups.class.getName());
 
-        String bootstrapServers = "127.0.0.1:9092";
+        String bootstrapServers = "kafka.cluster.local:31090";
         String groupId = "my-fifth-application";
         String topic = "first_topic";
 
