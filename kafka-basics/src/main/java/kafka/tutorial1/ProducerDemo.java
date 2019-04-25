@@ -11,7 +11,8 @@ public class ProducerDemo {
 
     public static void main(String[] args) {
 
-        String bootstrapServers = "127.0.0.1:9092";
+//        String bootstrapServers = "127.0.0.1:9092";
+        String bootstrapServers = "kafka.cluster.local:31090";
 
         // create Producer properties
         Properties properties = new Properties();
@@ -24,7 +25,7 @@ public class ProducerDemo {
 
         // create a producer record
         ProducerRecord<String, String> record =
-                new ProducerRecord<String, String>("first_topic", "hello world");
+                new ProducerRecord<String, String>("first_topic", "hello world from java");
 
         // send data - asynchronous
         producer.send(record);
